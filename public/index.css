@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+html, body{
+  margin: 0;/*правило хорошего тона. СЕКРЕТ: ЕСЛИ задать элементу ширину, а потом задать горизонтальный маржин (ну и какой-то верхний и нижний), то элемент выровняется по ценру!*/
+  padding: 0;
+  min-width: 1000px; /*максимум у экрана обычного - 1024 пикселя. 24 пикселя оставим на скролл. чтобы не тютелька в тютельку, зададим максимум для всего доумента косарь, а для блочных элементов 960 пикселей. то есть вычитаем от всего 40 пикселей, чтобы страница норм смотрелась*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+  font-size: 20px;
+  padding: 27px 0 27px 18px;
+  margin: 0 0 34px;/*убираем автоматический маржин у заголовка, чтобы не мешал*/
+  border-bottom: 1px solid #e5e5e5;/*цвет через пипетку в фш*/
+}
+
+
+.black-bar{
+  background-color: rgb(109, 44, 6);
+  color: white;/* если нужен отступ margin, то для каждой стороны можно использовать топ, боттом, лефт, райт, а если надо для всех сразу - тогда просто маржин и значение. ИЛИ МОЖНО ПИСАТЬ МАРЖИН И ЗАДАВАТЬ ЗНАЧЕНИЯ ДЛЯ ВСЕХ СТОРОН по часовой стрелке, начиная с верхнего*/
+ padding: 20px 0;/* еще можно задать ширину в процентах для обычного экрана, а также задать min-width и макс для того, чтобы контролировать сжатие и растягивание экрана*/
+ font-size: 16px;
+ 
+ 
+}
+.black-bar a {/*стиль применится только к той ссылке, которая находится внутри этого класса*/
+  color: white;
+} 
+.fixed-container {
+width: 960px;/*количество пикселей увидели в фотошопе*/ 
+margin: 0 auto;
+position: relative;
+
+}
+#datetime {
+float: right;/*выравнивает элементы по левому или правому краю, ну или центр (none) + все элементы рядом с ним начинают его обтекать*/
+}
+#header{
+  height: 100px;
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  width: 960px;
+  margin: 25px auto 0 auto;
+  
+  
+  
+  
+  
+}
+
+
+.btn{
+  width: 50px;
+  height: 50px;
+}
+.item{
+  float: left;
+  display: inline;
+  margin: 20px; 
+  margin-left: 0;
+  padding-right: 30px;
+}
+.items-2{
+  
+  float: right;
+  margin-right: 0;
+  padding-left: 30px;
+  padding-right: 0px;
+  
+}
+  
+   
+     
+  
+  
+
+
+
+#menu-container{
+  height: 70px;
+  
+  
+}
+.menu-items{
+  float: left;
+  display: inline; 
+  font-size: 16px;
+  padding: 9px;
+ 
+  
+}
+.menu-items a{
+  text-decoration: none;
+}
+#root{
+background-color: white;
+width: 470px;
+float: left;
+border: 2px rgba(150, 64, 43, 0.836) solid;
+border-radius: 40px;
+
+
+}
+
+
+
+.news-item-text{
+margin-bottom: 20px;
+padding-right: 15px;  
+}
+
+
+#column-center{
+  width: 440px;
+  margin-left: 15px;
+  float: right;
+  margin-right: 15px;
+  background-color: white;
+  border: 2px rgba(150, 64, 43, 0.836) solid;
+  border-radius: 40px;
+}
+
+
+#memasiki {
+  display: block; margin: 0 auto;
+  padding-bottom: 15px;
+
+
+
+}
+
+
+#headline-item{
+  
+  
+  background-image: url(img/Layer\ 1.png);
+  background-size: 400 327;
+  background-repeat: no-repeat;
+  
+  padding-left: 20px;
+  float: left; 
+}
+
+
+#headline-item a{
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+}
+#headlink{
+  padding-top: 90px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+#headline-text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 70px;
+  padding-top: 30px;
+}
+#headline-data{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: white;
+  float: right;
+  padding-right: 15px;
+  padding-top: 30px;
+  display: inline;
+  padding-bottom: 30px;
+  
+  
+ 
+
+
+}
+#headline-time{
+  font-size: 12px;
+  color: white;
+  float: left;
+  display: inline;
+  padding-top: -28px;
+  padding-left: 115px;
+ 
+}
+
+#central-container{
+  padding-top: 20px;  
+  background-color: #f9f9f9; /*цвет можно подобрать при просмотре кода в гугле на разрабатываемой странице*/  
+  background-image:url('img/central.png');/*это мы делаем серое начало фона, вырезанное из фш*/
+  background-repeat:repeat-x ; /*картинка размножится только по горизонтали*/
+}
+
+#central-container .fixed-container{
+overflow-y: hidden;
+}
+
+#row-1{width: 400px;}
+
+#numb1{
+  width: 200px;
+  height: 140px;
+  margin-top: 20px;
+  margin-right: 20px;
+  
+  float: left;
+ 
+  
+}
+
+#numb2{
+  width: 200px;
+  height: 140px;
+  
+  margin-right: 20px;
+  
+ 
+  float: right;
+  
+}
+
+#text-news{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: 200px;
+  height: 55px;
+  padding-top: 10px;
+}
+
+#column-right{  
+  width: 220px; 
+  float: right;
+  background-color: white;
+  border: 2px rgba(150, 64, 43, 0.836) solid;
+  border-radius: 40px;
+  margin-top: 0;
+  
+}
+
+#column-right img{
+  margin-bottom: 20px;
+}
