@@ -15,4 +15,4 @@ React made with freeCodeCamp.org tutorial video https://www.youtube.com/watch?v=
 Yarn package manager used.
   
 Скриншот:
-![demo](https://user-images.githubusercontent.com/117010216/201501512-bd43d2cf-2804-42d5-9a97-6987c60d2fdd.png)
+
